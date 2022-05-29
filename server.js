@@ -15,7 +15,7 @@ let nextId = 1;
 const router = new Router();
 
 router.get('/notes', async (ctx, next) => {
-    ctx.response.body = JSON.stringify(notes);
+    ctx.response.body = notes;
 });
 
 router.post('/notes', async(ctx, next) => {
